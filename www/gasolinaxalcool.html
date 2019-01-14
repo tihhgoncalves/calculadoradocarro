@@ -1,0 +1,46 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+<div class="page" data-name="gasolinaxalcool">
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+        <div class="left">
+            <a href="#" class="link back">
+            <i class="icon icon-back"></i>
+            <span class="ios-only">Back</span>
+            </a>
+        </div>
+        <div class="title">Gasolina x Álcool</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="block">
+        <p>Vai abastecer? Preencha os valores de cada combustível abaixo e descubra qual é o mais econômico pra você nesse momento.</p>
+
+          <hr>
+
+          <h3>Preço da Gasolina</h3>
+          <input type="text" class="money" id="gasolina">
+
+          <h3>Preço da Etanol</h3>
+          <input type="text" class="money" id="etanol">
+
+          <hr>
+
+          <button class="col button button-fill" onclick="calcula_gasolinaxalcool();">Calcular agora</button>
+
+        </div>
+    </div>
+
+  <div class="popup popup-gasolinaxalcool-resultado">
+    <div class="block">
+      <h1><small>Abasteça com</small><br>
+      <span class="combustivel">xx</span></h1>
+      <!-- Close Popup -->
+
+      <p>Se você viajar 100km, gastará R$<span class="cem-gasolina"></span> com gasolina e R$<span class="cem-etanol"></span> com etanol.</p>
+      <p>Por isso, abastecendo com <span class="combustivel">xx</span> hoje você tem uma economia de <span class="economia">xx</span>%.</p>
+
+      <p><a class="link popup-close" href="#">Ok, entendi.</a></p>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,62 @@
+body {
+  font-family: 'Varela Round' !important;
+}
+.statusbar-overlay {
+  background: #b43b2e;
+}
+.md a {
+  color: #b43b2e;
+}
+.md .navbar {
+  background: #b43b2e !important;
+}
+.md .navbar .title {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.md .page {
+  background-color: #f2f2f2;
+}
+.md .page[data-name="home"] .modulo {
+  width: 46%;
+  background-color: #FFF;
+  margin: 2%;
+  float: left;
+}
+.md .page[data-name="home"] .modulo .icon {
+  width: 50%;
+  height: auto;
+  margin: 15px auto;
+  display: block;
+}
+.md .page[data-name="home"] .modulo span {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 10px;
+  min-height: 42px;
+}
+.md .page[data-name="gasolinaxalcool"] input.money {
+  background-color: #E1E1E1;
+  text-align: center;
+  font-size: 35px;
+  padding: 10px;
+  width: 100%;
+}
+.md .page[data-name="parametros"] input.km {
+  background-color: #E1E1E1;
+  text-align: left;
+  font-size: 15px;
+  padding: 10px;
+  width: 100%;
+}
+.popup-gasolinaxalcool-resultado h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #b43b2e;
+  font-size: 40px;
+  line-height: 38px;
+}
+.popup-gasolinaxalcool-resultado h1 small {
+  font-size: 15px;
+}

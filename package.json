@@ -1,0 +1,21 @@
+{
+    "name": "br.com.taticadesucesso.calculadoradocarro",
+    "version": "1.0.0",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "displayName": "calculadoradocarro",
+    "dependencies": {
+        "cordova-android": "^7.1.4",
+        "cordova-plugin-screen-orientation": "3.0.1",
+        "cordova-plugin-splashscreen": "5.0.2",
+        "cordova-plugin-statusbar": "2.4.2",
+        "es6-promise-plugin": "4.2.2"
+    },
+    "cordova": {
+        "platforms": [
+            "android"
+        ],
+        "plugins": {}
+    }
+}
