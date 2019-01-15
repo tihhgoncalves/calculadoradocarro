@@ -14,7 +14,7 @@ App com várias calculadoras que ajudarão você a extrair o melhor desempenho c
 
 ### Autor
 
-Esse aplicativo foi desenvolvido pela [Tática de Sucesso](http://taticadesucesso.com.br).
+Esse aplicativo é uma iniciativa OpenSource da [Tática de Sucesso](http://taticadesucesso.com.br).
 
 #### Desenvolvedores
  - **Tihh Gonçalves** [@tihhgoncalves](https://github.com/tihhgoncalves) (gerente)
