@@ -21,10 +21,8 @@ Esse aplicativo é uma iniciativa OpenSource da [Tática de Sucesso](http://tati
  
 ---
 
- Quer participar desse projeto?
- Escreva para euquero@taticadesucesso.com.br.
- 
- ---
+Quer participar desse projeto?
+Escreva para euquero@taticadesucesso.com.br.
 
 Visite o [Ambiente para Desenvolvedores](https://github.com/tihhgoncalves/calculadoradocarro/wiki) para informações técnicas de desenvolvimento.
 
