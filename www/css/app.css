@@ -36,6 +36,11 @@ body {
   padding-bottom: 10px;
   min-height: 42px;
 }
+.md .page[data-name="home"] .title {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
 .md .page[data-name="gasolinaxalcool"] input.money {
   background-color: #E1E1E1;
   text-align: center;
@@ -59,4 +64,10 @@ body {
 }
 .popup-gasolinaxalcool-resultado h1 small {
   font-size: 15px;
+}
+.md .button {
+  color: #b43b2e;
+}
+.md .button.button-fill {
+  background-color: #b43b2e;
 }
