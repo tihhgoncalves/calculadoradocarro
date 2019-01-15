@@ -19,10 +19,14 @@ Esse aplicativo é uma iniciativa OpenSource da [Tática de Sucesso](http://tati
 #### Desenvolvedores
  - **Tihh Gonçalves** [@tihhgoncalves](https://github.com/tihhgoncalves) (gerente)
  
- Visite o [Ambiente para Desenvolvedores](https://github.com/tihhgoncalves/calculadoradocarro/wiki) para informações técnicas de desenvolvimento.
- 
+---
+
  Quer participar desse projeto?
  Escreva para euquero@taticadesucesso.com.br.
+ 
+ ---
+
+Visite o [Ambiente para Desenvolvedores](https://github.com/tihhgoncalves/calculadoradocarro/wiki) para informações técnicas de desenvolvimento.
 
 
 
