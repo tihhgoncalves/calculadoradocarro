@@ -18,7 +18,6 @@ Esse aplicativo é uma iniciativa OpenSource da [Tática de Sucesso](http://tati
 
 #### Desenvolvedores
  - **Tihh Gonçalves** [@tihhgoncalves](https://github.com/tihhgoncalves) (gerente)
- - **Bruno Gonçalves** [@bugotech](https://github.com/bugotech)
  
  Quer participar desse projeto?
  Escreva para euquero@taticadesucesso.com.br.
