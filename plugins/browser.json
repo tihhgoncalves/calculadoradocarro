@@ -1,0 +1,25 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-screen-orientation": {
+      "PACKAGE_NAME": "br.com.taticadesucesso.calculadoradocarro"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "br.com.taticadesucesso.calculadoradocarro"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "br.com.taticadesucesso.calculadoradocarro"
+    }
+  },
+  "dependent_plugins": {
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "br.com.taticadesucesso.calculadoradocarro"
+    }
+  }
+}

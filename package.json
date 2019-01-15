@@ -16,6 +16,10 @@
         "platforms": [
             "android"
         ],
-        "plugins": {}
+        "plugins": {
+            "cordova-plugin-screen-orientation": {},
+            "cordova-plugin-statusbar": {},
+            "cordova-plugin-splashscreen": {}
+        }
     }
 }
