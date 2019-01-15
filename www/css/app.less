@@ -7,9 +7,9 @@ body{
 }
 
 .statusbar-overlay {
-  background: @cor-vermelho;
+  background: none;
+  background-color: @cor-vermelho;
 }
-
 
 
 .md{
@@ -19,7 +19,8 @@ body{
   }
 
   .navbar{
-    background: @cor-vermelho!important;
+    background: none;
+    background-color: @cor-vermelho;
 
     .title{
       text-transform: uppercase;
@@ -42,7 +43,7 @@ body{
         float: left;
 
         .icon{
-          width: 50%;
+          width: 30%;
           height: auto;
           margin: 15px auto;
           display: block;
@@ -62,7 +63,13 @@ body{
       .title{
         display: block;
         width: 100%;
-        text-align: center;
+
+        img{
+          width: 80%;
+          max-width: 270px;
+          display: block;
+          margin: auto;
+        }
       }
 
     }

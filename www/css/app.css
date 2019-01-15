@@ -2,13 +2,15 @@ body {
   font-family: 'Varela Round' !important;
 }
 .statusbar-overlay {
-  background: #b43b2e;
+  background: none;
+  background-color: #b43b2e;
 }
 .md a {
   color: #b43b2e;
 }
 .md .navbar {
-  background: #b43b2e !important;
+  background: none;
+  background-color: #b43b2e;
 }
 .md .navbar .title {
   text-transform: uppercase;
@@ -24,7 +26,7 @@ body {
   float: left;
 }
 .md .page[data-name="home"] .modulo .icon {
-  width: 50%;
+  width: 30%;
   height: auto;
   margin: 15px auto;
   display: block;
@@ -39,7 +41,12 @@ body {
 .md .page[data-name="home"] .title {
   display: block;
   width: 100%;
-  text-align: center;
+}
+.md .page[data-name="home"] .title img {
+  width: 80%;
+  max-width: 270px;
+  display: block;
+  margin: auto;
 }
 .md .page[data-name="gasolinaxalcool"] input.money {
   background-color: #E1E1E1;
