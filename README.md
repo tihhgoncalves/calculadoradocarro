@@ -10,7 +10,7 @@ App com várias calculadoras que ajudarão você a extrair o melhor desempenho c
 ### Distribuição
  - [Google Play](https://play.google.com/store/apps/details?id=br.com.taticadesucesso.calculadoradocarro)
 
-#### Autor
+### Autor
 
 Esse aplicativo foi desenvolvido pela [http://taticadesucesso.com.br](Tática de Sucesso).
 
