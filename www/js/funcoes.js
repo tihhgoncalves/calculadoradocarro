@@ -1,4 +1,4 @@
-function calcula_gasolinaxalcool(){
+function calcula_flex(){
 
   if($('#gasolina').val() <= 0){
     app.dialog.alert('Você precisa preencher o preço da Gasolina antes de calcular.', 'Ops!', function(){
@@ -18,6 +18,11 @@ function calcula_gasolinaxalcool(){
   window.localStorage.setItem('preco_etanol', $('#etanol').val());
 
 
+  var agora = new Date;
+
+  var economia;
+  var resultado;
+
   var gasolina_media = somente_numero(window.localStorage.getItem('media_gasolina'));
   var gasolina_preco = somente_numero($('#gasolina').val());
   var etanol_media = somente_numero(window.localStorage.getItem('media_etanol'));
@@ -28,32 +33,40 @@ function calcula_gasolinaxalcool(){
 
   if(gasolina_custo < etanol_custo) {
 
-    $('.popup-gasolinaxalcool-resultado .combustivel').text('Gasolina');
+    resultado = 'Gasolina';
     var combustivel_maiscaro = etanol_custo;
     var combustivel_maisbarato = gasolina_custo;
 
   } else {
 
-    $('.popup-gasolinaxalcool-resultado .combustivel').text('Etanol');
+    resultado = 'Etanol';
     var combustivel_maiscaro = gasolina_custo;
     var combustivel_maisbarato = etanol_custo;
   }
 
+  $('.resultado .combustivel').text(resultado);
+  economia = (100 - ((combustivel_maisbarato*100) / combustivel_maiscaro)).toFixed(1);
 
-  $('.popup-gasolinaxalcool-resultado .cem-gasolina').text((gasolina_custo * 100).toFixed(2));
-  $('.popup-gasolinaxalcool-resultado .cem-etanol').text((etanol_custo * 100).toFixed(2));
-  $('.popup-gasolinaxalcool-resultado .economia').text( (100 - ((combustivel_maisbarato*100) / combustivel_maiscaro)).toFixed(1) );
-
-
-
-
-
-  var dynamicPopup = app.popup.create({
-    el: '.popup-gasolinaxalcool-resultado'
-  });
+  $('.resultado .cem-gasolina').text((gasolina_custo * 100).toFixed(2));
+  $('.resultado .cem-etanol').text((etanol_custo * 100).toFixed(2));
+  $('.resultado .economia').text( economia );
 
 
-  dynamicPopup.open();
+
+  //salva histórico
+  var dt = {
+    data: agora.getDate() + '/' + mes_nome[agora.getMonth()] + '/' + agora.getYear(),
+    hora: agora.getHours() + ':' + agora.getMinutes(),
+    valor_gasolina: gasolina_preco,
+    valor_etanol: etanol_preco,
+    resultado: resultado,
+    resultado_economia: economia
+  };
+  calcflex_hist_data.unshift(dt);
+
+  window.localStorage.setItem('calculadora-flex-hist', json_encode(calcflex_hist_data));
+
+  $('.resultado').show('blind');
 
 }
 
@@ -83,7 +96,6 @@ function salvar_parametros(){
 
 }
 
-
 function somente_numero(text, virgula){
 
   if(virgula == false)
@@ -91,3 +103,16 @@ function somente_numero(text, virgula){
 
   return text.replace(/[^\d,]+/g,'').replace(',', '.');
 }
+
+function json_encode(ar){
+  var res = JSON.stringify({data: ar});
+  console.log(res);
+  return res;
+}
+
+function json_decode(json){
+  var res = JSON.parse(json);
+  console.log(res.data);
+  return res.data;
+}
+

@@ -1,4 +1,10 @@
 @cor-vermelho: #b43b2e;
+@cor-cinza-claro: #f2f2f2;
+@cor-cinza: #e1e1e1;
+@cor-cinza-escuro: #8e8e93;
+@cor-preto: #212121;
+@cor-branco: #ffffff;
+
 @fonte: 'Varela Round';
 
 body{
@@ -75,7 +81,7 @@ body{
     }
 
 
-    &[data-name="gasolinaxalcool"]{
+    &[data-name="calculadora-flex"]{
 
       input.money{
 
@@ -86,8 +92,54 @@ body{
         width: 100%;
       }
 
-    }
+      .historico{
+        table, th, tr, td, span {
+          font-size: 9px;
+          color: @cor-cinza-escuro;
+        }
 
+        table{
+
+          tr{
+
+            td{
+              padding-left: 2px;
+              padding-right: 2px;
+
+              &:first-child{
+                padding-left: 28px;
+              }
+              &:last-child{
+                padding-right: 28px;
+              }
+            }
+          }
+        }
+
+
+      }
+
+      div.resultado{
+
+        display: none;
+
+        h1{
+
+          small{
+            font-size: 15px;
+          }
+
+          text-transform: uppercase;
+          text-align: center;
+          color: @cor-vermelho;
+          font-size: 40px;
+          line-height: 38px;
+
+        }
+
+      }
+
+    }
 
     &[data-name="parametros"]{
 
@@ -100,28 +152,12 @@ body{
         width: 100%;
       }
 
+
     }
 
   }
 }
 
-
-.popup-gasolinaxalcool-resultado{
-
-  h1{
-
-    small{
-      font-size: 15px;
-    }
-
-    text-transform: uppercase;
-    text-align: center;
-    color: @cor-vermelho;
-    font-size: 40px;
-    line-height: 38px;
-
-  }
-}
 
 
 .md .button{

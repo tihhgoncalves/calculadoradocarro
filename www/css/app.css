@@ -48,12 +48,43 @@ body {
   display: block;
   margin: auto;
 }
-.md .page[data-name="gasolinaxalcool"] input.money {
+.md .page[data-name="calculadora-flex"] input.money {
   background-color: #E1E1E1;
   text-align: center;
   font-size: 35px;
   padding: 10px;
   width: 100%;
+}
+.md .page[data-name="calculadora-flex"] .historico table,
+.md .page[data-name="calculadora-flex"] .historico th,
+.md .page[data-name="calculadora-flex"] .historico tr,
+.md .page[data-name="calculadora-flex"] .historico td,
+.md .page[data-name="calculadora-flex"] .historico span {
+  font-size: 9px;
+  color: #8e8e93;
+}
+.md .page[data-name="calculadora-flex"] .historico table tr td {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.md .page[data-name="calculadora-flex"] .historico table tr td:first-child {
+  padding-left: 28px;
+}
+.md .page[data-name="calculadora-flex"] .historico table tr td:last-child {
+  padding-right: 28px;
+}
+.md .page[data-name="calculadora-flex"] div.resultado {
+  display: none;
+}
+.md .page[data-name="calculadora-flex"] div.resultado h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #b43b2e;
+  font-size: 40px;
+  line-height: 38px;
+}
+.md .page[data-name="calculadora-flex"] div.resultado h1 small {
+  font-size: 15px;
 }
 .md .page[data-name="parametros"] input.km {
   background-color: #E1E1E1;
@@ -61,16 +92,6 @@ body {
   font-size: 15px;
   padding: 10px;
   width: 100%;
-}
-.popup-gasolinaxalcool-resultado h1 {
-  text-transform: uppercase;
-  text-align: center;
-  color: #b43b2e;
-  font-size: 40px;
-  line-height: 38px;
-}
-.popup-gasolinaxalcool-resultado h1 small {
-  font-size: 15px;
 }
 .md .button {
   color: #b43b2e;

@@ -1,5 +1,5 @@
 <!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
-<div class="page" data-name="gasolinaxalcool">
+<div class="page" data-name="calculadora-flex">
     <div class="navbar">
         <div class="navbar-inner sliding">
         <div class="left">
@@ -25,9 +25,33 @@
 
           <hr>
 
-          <button class="col button button-fill" onclick="calcula_gasolinaxalcool();">Calcular agora</button>
+          <button class="col button button-fill" onclick="calcula_flex();" id="btn_calcula_flex">Calcular agora</button>
+
+
+
+          <div class="resultado">
+            <h1><small>Abasteça com</small><br>
+              <span class="combustivel">xx</span></h1>
+            <!-- Close Popup -->
+
+            <p>Se você viajar 100km, gastará R$<span class="cem-gasolina"></span> com gasolina e R$<span class="cem-etanol"></span> com etanol.</p>
+            <p>Por isso, abastecendo com <span class="combustivel">xx</span> hoje você tem uma economia de <span class="economia">xx</span>%.</p>
+
+          </div>
 
         </div>
+
+        <div class="data-table historico">
+          <table>
+            <tbody>
+
+
+
+            </tbody>
+          </table>
+        </div>
+
+
     </div>
 
   <div class="popup popup-gasolinaxalcool-resultado">
