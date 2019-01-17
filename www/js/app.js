@@ -44,6 +44,12 @@ $$(document).on('deviceready', function() {
 
   handleExternalURLs();
 
+
+  //sempre que clicarem em BACK, ir para a Home
+  document.addEventListener("backbutton", function(){
+    view_main.router.navigate('/home/');
+  }, false);
+
 });
 
 
