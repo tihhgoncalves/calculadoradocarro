@@ -54,6 +54,7 @@ $$(document).on('deviceready', function() {
 
 
 var calcflex_hist_data;
+
 $$(document).on('page:init', '.page[data-name="calculadora-flex"]', function (e) {
 
   //limpa botão e esconde resultado
@@ -61,44 +62,7 @@ $$(document).on('page:init', '.page[data-name="calculadora-flex"]', function (e)
   $('#btn_calcula_flex .resultado').hide();
 
   //carrega histórico
-  calcflex_hist_data = window.localStorage.getItem('calculadora-flex-hist');
-
-  if(window.localStorage.hasOwnProperty('calculadora-flex-hist')) {
-
-    calcflex_hist_data = json_decode(calcflex_hist_data);
-
-  } else {
-    calcflex_hist_data = [];
-  }
-
-  if(calcflex_hist_data.length > 0){
-
-    calcflex_hist_data.forEach(function(item){
-
-      var html;
-      html += '<tr>';
-      html += '<td class="label-cell">' + item.data + '<br>' + item.hora + '</td>';
-      html += '<td>Gasolina: R$ ' + item.valor_gasolina + '<br>Etanol: R$ ' + item.valor_etanol + '</td>';
-      html += '<td><strong>' + item.resultado + '</strong><br>Economia de ' + item.resultado_economia + '%</td>';
-      html += '</tr>';
-
-      $('.historico table tbody').append(html);
-
-    });
-
-  }
-
-  /*
-   <tr>
-   <td class="label-cell">12/01/19<br>12:00</td>
-   <td>Gasolina: R$2,38<br>Etanol: R$1,23</td>
-   <td><strong>Gasolina</strong><br>(economia de 5%)</td>
-   </tr>
-
-
-   */
-
-
+  calculadora_flex_monta_hist();
 
   //verifica se já foi registrado as médias
   if( (window.localStorage.getItem('media_gasolina') <= 0) || (window.localStorage.getItem('media_etanol') <= 0)){

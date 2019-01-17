@@ -62,14 +62,54 @@ function calcula_flex(){
     resultado: resultado,
     resultado_economia: economia
   };
+
   calcflex_hist_data.unshift(dt);
 
   window.localStorage.setItem('calculadora-flex-hist', json_encode(calcflex_hist_data));
 
-  $('.resultado').show('blind');
+  $('.resultado').show('blind', function(){
+
+    //já atualiza histórico
+    calculadora_flex_monta_hist();
+    
+  });
+
+
 
 }
 
+function calculadora_flex_monta_hist(){
+
+  //limpa histórico
+  $('.historico table tbody tr').remove();
+
+  calcflex_hist_data = window.localStorage.getItem('calculadora-flex-hist');
+
+  if(window.localStorage.hasOwnProperty('calculadora-flex-hist')) {
+
+    calcflex_hist_data = json_decode(calcflex_hist_data);
+
+  } else {
+    calcflex_hist_data = [];
+  }
+
+  if(calcflex_hist_data.length > 0){
+
+    calcflex_hist_data.forEach(function(item){
+
+      var html;
+      html += '<tr>';
+      html += '<td class="label-cell">' + item.data + '<br>' + item.hora + '</td>';
+      html += '<td>Gasolina: R$ ' + item.valor_gasolina + '<br>Etanol: R$ ' + item.valor_etanol + '</td>';
+      html += '<td><strong>' + item.resultado + '</strong><br>Economia de ' + item.resultado_economia + '%</td>';
+      html += '</tr>';
+
+      $('.historico table tbody').append(html);
+
+    });
+
+  }
+}
 function salvar_parametros(){
 
   if($('#media_gasolina').val() <= 0){
