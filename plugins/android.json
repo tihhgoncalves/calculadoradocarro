@@ -15,6 +15,12 @@
     },
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "br.com.taticadesucesso.calculadoradocarro"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "br.com.taticadesucesso.calculadoradocarro"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "br.com.taticadesucesso.calculadoradocarro"
     }
   },
   "dependent_plugins": {

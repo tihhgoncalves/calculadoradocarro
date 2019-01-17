@@ -89,7 +89,6 @@ function salvar_parametros(){
   window.localStorage.setItem('media_gasolina', $('#media_gasolina').val());
   window.localStorage.setItem('media_etanol', $('#media_etanol').val());
 
-
   app.dialog.alert('Parâmetros salvos com sucesso!', 'Tudo certo!', function(){
     view_main.router.navigate('/home/');
   });
@@ -106,13 +105,11 @@ function somente_numero(text, virgula){
 
 function json_encode(ar){
   var res = JSON.stringify({data: ar});
-  console.log(res);
   return res;
 }
 
 function json_decode(json){
   var res = JSON.parse(json);
-  console.log(res.data);
   return res.data;
 }
 

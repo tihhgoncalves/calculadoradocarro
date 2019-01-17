@@ -33,6 +33,7 @@ var view_main = app.views.create('.view-main');
 
 $$(document).on('deviceready', function() {
   console.log("App iniciado.");
+  window.open = cordova.InAppBrowser.open;
 
 });
 
@@ -47,8 +48,10 @@ $$(document).on('page:init', '.page[data-name="calculadora-flex"]', function (e)
   //carrega histórico
   calcflex_hist_data = window.localStorage.getItem('calculadora-flex-hist');
 
-  if(calcflex_hist_data.length > 0) {
+  if(window.localStorage.hasOwnProperty('calculadora-flex-hist')) {
+
     calcflex_hist_data = json_decode(calcflex_hist_data);
+
   } else {
     calcflex_hist_data = [];
   }

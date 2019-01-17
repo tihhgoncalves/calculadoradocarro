@@ -2,7 +2,7 @@
 <html>
 <head>
 
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://*/* 'unsafe-eval' 'unsafe-inline'; style-src *; media-src *">
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
@@ -11,12 +11,18 @@
   <meta name="theme-color" content="#3c0876">
   <!-- Your app title -->
   <title>My App</title>
+
+
+  <link rel="stylesheet" href="lib/fontawesome/css/all.css">
+
+
   <!-- Path to Framework7 Library CSS -->
   <link rel="stylesheet" href="lib/framework7/framework7.min.css">
   <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.min.css">
   <!-- Path to your custom app styles-->
   <link rel="stylesheet" href="css/fonts/fonts.css">
   <link rel="stylesheet" href="css/app.css">
+
 </head>
 
 <body>
@@ -47,6 +53,10 @@
                       <span>Parâmetros</span>
                     </a>
                   </div>
+
+
+                  <footer><a href="https://www.facebook.com/Calculadora-do-Carro-226142511658512" onclick="window.open(this.href, '_system');">Curta, siga e compartilhe <i class="fab fa-facebook-square"></i></a></footer>
+
                 </div>
 
 

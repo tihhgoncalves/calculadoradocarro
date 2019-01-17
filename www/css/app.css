@@ -48,6 +48,25 @@ body {
   display: block;
   margin: auto;
 }
+.md .page[data-name="home"] footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.md .page[data-name="home"] footer a {
+  color: #8e8e93;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 11px;
+  width: 100%;
+  padding: 15px 0;
+  display: block;
+}
+.md .page[data-name="home"] footer a i {
+  font-size: 18px;
+  margin-left: 6px;
+  margin-top: -3px;
+}
 .md .page[data-name="calculadora-flex"] input.money {
   background-color: #E1E1E1;
   text-align: center;
