@@ -17,7 +17,7 @@ var app = new Framework7({
     },
     {
       path: '/gasolinaxalcool/',
-      url: 'pages/calcula-flex.html'
+      url: 'pages/calculadora-flex.html'
     },
     {
       path: '/parametros/',
