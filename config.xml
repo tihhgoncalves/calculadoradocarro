@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="br.com.taticadesucesso.calculadoradocarro" version="beta.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="br.com.taticadesucesso.calculadoradocarro" version="beta.4.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Calculadora do Carro</name>
     <description>
         App com várias calculadoras que ajudarão você a extrair o melhor desempenho com o menor custo do seu carro.

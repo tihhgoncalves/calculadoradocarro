@@ -71,7 +71,7 @@ function calcula_flex(){
 
     //já atualiza histórico
     calculadora_flex_monta_hist();
-    
+
   });
 
 
