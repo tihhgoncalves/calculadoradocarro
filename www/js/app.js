@@ -121,8 +121,15 @@ $$(document).on('page:init', '.page[data-name="calculadora-flex"]', function (e)
 
   });
 
+  //preenche os campos com o valor que está no histórico
   $('#gasolina').val(window.localStorage.getItem('preco_gasolina'));
   $('#etanol').val(window.localStorage.getItem('preco_etanol'));
+
+  //aplica evento de selecionar quando clica no campo
+  $('#gasolina, #etanol').click(function(){
+    $(this).select();
+  })
+
 
 });
 
