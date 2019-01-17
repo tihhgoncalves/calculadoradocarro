@@ -7,7 +7,6 @@
     "displayName": "calculadoradocarro",
     "dependencies": {
         "cordova-android": "^7.1.4",
-        "cordova-plugin-inappbrowser": "^3.0.0",
         "cordova-plugin-screen-orientation": "3.0.1",
         "cordova-plugin-splashscreen": "5.0.2",
         "cordova-plugin-statusbar": "2.4.2",
@@ -22,8 +21,7 @@
             "cordova-plugin-screen-orientation": {},
             "cordova-plugin-statusbar": {},
             "cordova-plugin-splashscreen": {},
-            "cordova-plugin-whitelist": {},
-            "cordova-plugin-inappbrowser": {}
+            "cordova-plugin-whitelist": {}
         }
     }
 }

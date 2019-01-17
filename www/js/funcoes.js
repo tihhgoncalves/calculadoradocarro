@@ -113,3 +113,15 @@ function json_decode(json){
   return res.data;
 }
 
+
+
+function handleExternalURLs() {
+
+  $(document).on('click', 'a[href^="http"]', function (e) {
+    var url = $(this).attr('href');
+    navigator.app.loadUrl(url, { openExternal: true });
+    e.preventDefault();
+  });
+
+}
+

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="br.com.taticadesucesso.calculadoradocarro" version="beta.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="br.com.taticadesucesso.calculadoradocarro" version="beta.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Calculadora do Carro</name>
     <description>
         App com várias calculadoras que ajudarão você a extrair o melhor desempenho com o menor custo do seu carro.
@@ -9,10 +9,10 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <allow-navigation href="http://*/*" />
-    <allow-navigation href="https://*/*" />
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
+    <allow-navigation href="http://*" />
+    <allow-navigation href="https://*" />
+    <allow-intent href="http://*" />
+    <allow-intent href="https://*" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
@@ -53,6 +53,5 @@
     <plugin name="cordova-plugin-statusbar" spec="2.4.2" />
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-whitelist" spec="1.3.3" />
-    <plugin name="cordova-plugin-inappbrowser" spec="^3.0.0" />
     <engine name="android" spec="^7.1.4" />
 </widget>

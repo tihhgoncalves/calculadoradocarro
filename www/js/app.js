@@ -22,6 +22,10 @@ var app = new Framework7({
     {
       path: '/parametros/',
       url: 'pages/parametros.html'
+    },
+    {
+      path: '/doe/',
+      url: 'pages/doe.html'
     }
 
   ]
@@ -33,7 +37,12 @@ var view_main = app.views.create('.view-main');
 
 $$(document).on('deviceready', function() {
   console.log("App iniciado.");
-  window.open = cordova.InAppBrowser.open;
+
+  if (!window.device) {
+    window.device = { platform: 'Browser' };
+  }
+
+  handleExternalURLs();
 
 });
 
